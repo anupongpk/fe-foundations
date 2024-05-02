@@ -48,11 +48,11 @@ body {
   text-align: left;
 }
 
-.card-content .header {
+.card-content .card-header {
   margin-bottom: 12px;
 }
 
-.card-content .header .badge {
+.card-content .card-header .badge {
   display: block;
   width: fit-content;
   background-color: #F0FDF4;
@@ -64,7 +64,7 @@ body {
   border-radius: 9999px;
 }
 
-.card-content .header .description {
+.card-content .card-header .description {
   font-size: 18px;
   font-weight: semibold;
   margin-top: 8px;
