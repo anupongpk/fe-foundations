@@ -12,6 +12,25 @@ body {
   box-sizing: border-box;
 }
 
+/* UTILITY */
+.text-xl-medium {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.text-base-normal {
+  font-size: 16px;
+  font-weight: 400;
+  color: #525252;
+}
+
+.text-sm-normal {
+  font-size: 14px;
+  font-weight: 400;
+  color: #525252;
+}
+
+
 .credits {
   color: #777;
   position: fixed;
@@ -24,4 +43,87 @@ body {
 .credits a {
   color: #000;
   font-weight: bold;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 340px;
+  margin-top: 200px;
+  padding: 24px 16px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #e1e4e8;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card__details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.card__details-img {
+  width: 64px;
+  height: 64px;
+}
+
+.card__details-info {
+  gap: 4px;
+}
+
+
+.card__actions {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  gap: 24px;
+}
+
+.card__actions-button {
+  display: block;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #4338CA;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 4px;
+}
+
+.card__actions-button:hover {
+  background-color: #3730A3;
+}
+
+.card__actions-button:focus {
+  outline: 6px solid #e8e9fc;
+}
+
+.card__actions-socials {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.card__actions-socials svg {
+  padding: 8px;
+  width: 36px;
+  height: 36px;
+  fill: #4338CA;
+  border-radius: 4px;
+}
+
+.card__actions-socials a:hover svg {
+  fill: #4338CA;
+  background-color: #fafafa;
+}
+
+.card__actions-socials a:focus svg {
+  fill: #4338CA;
+  background-color: #fafafa;
+  outline: 6px solid #e8e9fc;
 }
