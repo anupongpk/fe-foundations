@@ -1,46 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- [Delete this comment] This file is the main file for the challenge. For the most part, you should be editing this file. -->
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hero Section | GreatFrontEnd Projects</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
 
-    <!-- Tailwind CDN allows you to use Tailwind classes immediately in your HTML without any installation steps. 
-      If you're not using Tailwind, you may delete the <script> -->
-    <!-- Get started on Tailwind: https://tailwindcss.com/docs/installation/play-cdn -->
-    <script src="https://cdn.tailwindcss.com"></script>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hero Section | GreatFrontEnd Projects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
 
-    <link rel="icon" href="img/favicon.ico" sizes="any" />
-    <style>
-      /* You may write styles inside this <style> tag or within `css/style.css`. */
-    </style>
-  </head>
-  <body>
-    <!-- Add your site or application content here -->
-    <h1 class="text-5xl text-center font-semibold pt-20">
-      Hello world! Write your content here.
-    </h1>
+  <!-- Font Awesome CDN -->
+  <link rel="icon" href="img/favicon.ico" sizes="any" />
+</head>
 
-    <!-- Attribute this challenge to yourself! -->
-    <div class="credits">
-      A challenge by
-      <a
-        href="https://www.greatfrontend.com/projects?ref=challenges"
-        target="_blank"
-        >GreatFrontEnd Projects</a
-      >. Built by
-      <a href="https://www.greatfrontend.com/u/your_username" target="_blank"
-        >Your Name</a
-      >.
+<body>
+  <!-- Add your site or application content here -->
+  <header class="header">
+    <nav class="nav">
+      <div class="nav__logo">
+        <a href="#">
+          <img src="img/abstractly.png" alt="logo image" />
+        </a>
+      </div>
+
+      <ul class="nav__links text-base-medium">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <div class="nav__btn-desktop">
+        <button class="text-base-medium">Learn more</button>
+        <button class="nav__btn-cta text-base-medium">See pricing</button>
+      </div>
+
+      <!-- Mobile and Ipad section -->
+      <button class="nav__menu-toggle" aria-label="Open menu" aria-controls="nav-links-mobile" aria-expanded="false">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+          <path
+            d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z">
+          </path>
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+          <path
+            d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z">
+          </path>
+        </svg>
+      </button>
+    </nav>
+
+    <div class="nav__mobile">
+      <ul class="nav__links-mobile text-sm-normal">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="nav__btn-mobile">
+        <button>Learn more</button>
+        <button class="nav__btn-cta">Try it out</button>
+      </div>
     </div>
-    <script src="js/index.js"></script>
-  </body>
+
+  </header>
+
+
+  <!-- Attribute this challenge to yourself! -->
+  <div class="credits">
+    A challenge by
+    <a href="https://www.greatfrontend.com/projects?ref=challenges" target="_blank">GreatFrontEnd Projects</a>. Built by
+    <a href="https://www.greatfrontend.com/u/your_username" target="_blank">Your Name</a>.
+  </div>
+  <script src="js/index.js"></script>
+</body>
+
 </html>

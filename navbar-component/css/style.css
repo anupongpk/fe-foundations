@@ -6,12 +6,42 @@ body {
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
   min-height: 100vh;
+  background-image: linear-gradient(to bottom, #F9FAFB, #D2D6DB);
 }
 
 * {
   box-sizing: border-box;
 }
 
+ul {
+  list-style-type: none;
+  padding-inline-start: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  all: unset;
+}
+
+/* UTILITY */
+.text-base-medium {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.text-sm-normal {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+/* CREDITS */
 .credits {
   color: #777;
   position: fixed;
@@ -24,4 +54,187 @@ body {
 .credits a {
   color: #000;
   font-weight: bold;
+}
+
+/* START ADJUSTMENT CSS */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1280px;
+  padding: 6px 32px;
+  margin-top: 16px;
+
+}
+
+.nav__logo img {
+  width: 112px;
+  height: 32px;
+}
+
+.nav__links {
+  display: flex;
+  gap: 32px;
+  margin-left: 96px;
+}
+
+.nav__links a {
+  color: #525252;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.nav__links a:hover {
+  color: #171717;
+}
+
+.nav__links a:focus,
+.nav__links-mobile a:focus {
+  color: #171717;
+  outline: 3px solid #e8e9fc;
+  border-radius: 4px;
+}
+
+.nav__btn-desktop {
+  display: flex;
+  gap: 16px;
+  margin-left: auto;
+}
+
+.nav__btn-desktop button,
+.nav__btn-mobile button {
+  padding: 11px 18px;
+  border-radius: 4px;
+  border: 0.5px solid #E6E6E6;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.nav__btn-desktop button:hover,
+.nav__btn-mobile button:hover {
+  border: 1px solid #E6E6E6;
+  background-color: #FAFAFA;
+}
+
+.nav__btn-desktop button:focus,
+.nav__btn-mobile button:focus {
+  outline: 3px solid #e8e9fc;
+}
+
+.nav__btn-cta {
+  background-color: #4338CA;
+  color: #fff;
+}
+
+.nav__btn-cta:hover,
+.nav__btn-cta:focus {
+  background-color: #3730A3 !important;
+}
+
+.nav__menu-toggle {
+  display: none;
+}
+
+.nav__mobile {
+  display: none;
+}
+
+
+/* Responsive */
+
+/* Mobile and Tablet Breakpoint */
+@media (max-width: 1439px) {
+  .header {
+    height: 100vh;
+  }
+
+  .nav {
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 25px;
+  }
+
+  .nav__links {
+    display: none;
+  }
+
+  .nav__btn-desktop {
+    display: none;
+  }
+
+  .nav__menu-toggle {
+    display: flex;
+    margin-left: auto;
+    height: 20px;
+    width: 20px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .nav__menu-toggle svg {
+    height: 15px;
+    width: 15px;
+  }
+
+  .nav__menu-toggle svg:last-child {
+    display: none;
+  }
+
+  .nav__menu-toggle--open svg:first-child {
+    display: none;
+  }
+
+  .nav__menu-toggle--open svg:last-child {
+    display: block;
+  }
+
+  .nav__mobile {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 50px;
+    margin-top: 24px;
+  }
+
+  .nav__mobile--open {
+    display: flex;
+  }
+
+  .nav__links-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .nav__links-mobile {
+    margin-block-end: 0;
+    margin-block-start: 0;
+  }
+
+  .nav__links-mobile li {
+    padding: 8.5px 12px;
+  }
+
+  .nav__links-mobile a {
+    color: #171717;
+  }
+
+  .nav__btn-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: auto;
+  }
 }
