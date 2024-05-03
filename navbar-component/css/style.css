@@ -236,4 +236,11 @@ button {
     gap: 16px;
     margin-top: auto;
   }
+
+  @media (max-width: 767px) {
+    .nav {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
 }
