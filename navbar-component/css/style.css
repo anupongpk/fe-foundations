@@ -177,11 +177,22 @@ button {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+
   }
 
   .nav__menu-toggle svg {
+    fill: #525252;
     height: 15px;
     width: 15px;
+  }
+
+  .nav__menu-toggle svg:hover {
+    fill: #171717;
+  }
+
+  .nav__menu-toggle:focus {
+    border-radius: 4px;
+    outline: 3px solid #e8e9fc;
   }
 
   .nav__menu-toggle svg:last-child {
