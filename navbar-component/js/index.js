@@ -14,7 +14,6 @@ menuToggleEl.addEventListener("click", () => {
   navMobileEl.classList.toggle("nav__mobile--open");
   headerEl.classList.toggle("bg-white");
   toggleAriaAttributes();
-  menuToggleEl.blur();
 });
 
 // Escape key to close mobile menu
