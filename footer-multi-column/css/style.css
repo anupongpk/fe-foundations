@@ -192,6 +192,10 @@ input:focus.email--error {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 }
 
+.footer__newsletter-content {
+  color: #525252;
+}
+
 .footer__inner {
   display: flex;
   flex-direction: column;
